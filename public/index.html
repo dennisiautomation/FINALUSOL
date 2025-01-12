@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://usolenergiasolar.com.br/wp-content/uploads/2023/04/00.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-sol Energia Solar</title>
+    <script>
+      window.onerror = function(msg, url, line) {
+        console.error('Error:', msg, '\nURL:', url, '\nLine:', line);
+        document.body.innerHTML = '<div style="padding:20px"><h1>Erro ao carregar aplicação</h1><pre>' + 
+          msg + '</pre><p>Por favor, contate o suporte.</p></div>';
+        return false;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
